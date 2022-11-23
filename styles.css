@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@1,400;1,700&family=Rubik:ital,wght@0,428;1,400&family=Shalimar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@1,400;1,700&family=Rubik:ital,wght@0,428;1,400&family=Shalimar&display=swap');
+
+:root{
+    --primary-color: rgb(78, 231, 58);
+    --secondary-color:#2652F9;
+    /*#F9F826;*/
+}
+h2{
+    font-family: 'Shalimar', cursive;
+}
+body{
+    color:rgb(22, 109, 4);
+    font-family: 'Rubik', sans-serif;
+}
+h2{
+    color:blueviolet;
+}
+/* selector via TAGS CLASS ID */
+/*CSS BOX MODEL-___ MBPC  Margin Border Padding Content*/
+/*containers*/
+
+/*list non bullet ----inline----reverse*/
+.list-non-bullet{
+    list-style: none;
+    text-decoration-thickness: medium;
+    text-decoration: solid;
+    text-decoration-color: blueviolet;
+}
+
+.item-list-inline{
+    display: inline;
+    padding: 0rem 1rem;
+}
+
+/*nav*/
+.navigation{
+    background-color: rgb(252, 236, 17);
+    padding: .2rem .2rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius:1rem;
+}
+.navigation .link{
+    border-radius:.3rem;
+    color:blueviolet;
+    
+    text-align: left;
+    
+}
+
+.nav-brand{
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    font: blueviolet;
+    text-decoration: solid;
+}
+
+.navigation .nav-pills{
+    text-align:right;
+}
