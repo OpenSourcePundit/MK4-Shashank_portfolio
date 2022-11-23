@@ -71,7 +71,12 @@ h2,h3{
     max-width: 800px;
     margin: auto;
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
+}
+.containers{
+    max-width: 800px;
+    margin: auto;
+    padding: 1rem;
 }
 .offwhite{
     background-color:var(--offcolor);
@@ -91,7 +96,7 @@ h2,h3{
     padding: .2rem .2rem;
 }
 .link-active{
-    font-weight: bold;
+    font-weight: bolder;
 }
 .link-secondary{
     background-color:white;
@@ -105,4 +110,7 @@ footer{
     padding-bottom: .2em;
     border-top-left-radius: 1rem;
     border-top-right-radius:1rem;
+}
+.projectlist{
+    padding: 1rem;
 }
