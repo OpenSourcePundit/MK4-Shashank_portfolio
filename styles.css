@@ -121,13 +121,25 @@ footer{
     width: 400px;
     background-color: aqua;
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%) scale(0.1);
     text-align: center;
-    
+    text-decoration: none;
     padding: 1rem;
-
+    visibility: hidden;
+    transition: translate .5s, top .5s ;
+}
+.openpopup{
+    top:50%;
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);
+}
+.popup button{
+    padding: .5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    width: 100px;
 }
 .popup img{
     width: 130px;

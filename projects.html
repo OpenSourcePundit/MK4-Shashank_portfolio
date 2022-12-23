@@ -26,8 +26,8 @@
     <img class="main main-img" style="height:50vh" src="undraw_redesign_feedback_re_jvm0 (1).svg" alt="">
 <section class="section">
     <div class="containers">
-        <button id="sample-ques-Btn" style="cursor: grab;padding: .3rem;display: block;margin: auto;background-color: aqua;border-radius: 2rem;">Check Sampple Questions</button>
-        <div class="popup">
+        <button id="sample-ques-Btn" onclick="openPopup()" style="cursor: pointer;padding: .3rem;display: block;margin: auto;background-color: aqua;border-radius: 2rem;">Check Sampple Questions</button>
+        <div class="popup" id="popup">
             <img src="undraw_hacker_mind_-6-y85.svg">
             <h3>Sample Practice Questions</h3>
             <p>Tried several practice WEB-D ques for intervie of NEOG Camp,Which i wanted to share.</p>
@@ -35,25 +35,25 @@
                 <li>
                     <h5>Resize, Change color of text on Click of BUTTONS</h5>
                     <p>Sample Ques no. 2,3 and 4 are done in single HTML page.</p>
-                    <a style="margin-right: 1rem;" href="https://texteditor-opensourcepundit.netlify.app/">Open WebPage</a>
-                    <a style="margin-left: 1rem;" href="https://github.com/OpenSourcePundit/PRJ02_">View Source</a>
+                    <a style="margin-right: 1rem;text-decoration: none;" href="https://texteditor-opensourcepundit.netlify.app/">Open WebPage</a>
+                    <a style="margin-left: 1rem;text-decoration: none;" href="https://github.com/OpenSourcePundit/PRJ02_/">View Source</a>
                 </li>
                 <hr>
                 <li>
                     <h5>Perform mathematics operations on click of BUTTONS</h5>
                     <p>Sample Ques no.1 is done, A web app that takes 2 input and perform various operations on click of buttons</p>
-                    <a style="margin-right: 1rem;" href="https://prj01-calc-opensourcepundit.netlify.app/">Open WebPage</a>
-                    <a style="margin-left: 1rem;" href="https://github.com/OpenSourcePundit/PRJ01_">View Source</a>
+                    <a style="margin-right: 1rem;text-decoration: none;" href="https://prj01-calc-opensourcepundit.netlify.app/">Open WebPage</a>
+                    <a style="margin-left: 1rem;text-decoration: none;" href="https://github.com/OpenSourcePundit/PRJ01_/">View Source</a>
                 </li>
                 <hr>
                 <li>
                     <h5>CLI app for Quiz and some Fun games</h5>
                     <p>Sample Ques no.5 is done along with 14,15,16 and 17 in a single CLI app seperated by a switch case therein.</p>
-                    <a style="margin-right: 1rem;" href="">Open WebPage</a>
-                    <a style="margin-left: 1rem;" href="">View Source</a>
+                    <a style="margin-right: 1rem;text-decoration: none;" href="https://replit.com/@ShashankKumar45/CLI-Sample-Ques-NEOGCamp?v=1/">Open App</a>
+                    <a style="margin-left: 1rem;text-decoration: none;" href="https://github.com/OpenSourcePundit/PRJ03_CLI-Sample-Ques/">View Source</a>
                 </li>
             </ol>
-            <button id="close-sample-ques-Btn"></button>
+            <button id="close-sample-ques-Btn" onclick="closePopup()">  CLOSE  </button>
 
         </div>
         <ol reversed>
@@ -161,5 +161,14 @@
         <a style="padding:.5rem;"href="https://t.me/OpenSourcePundit"><i class="fa-brands fa-telegram "></i></a>
     </div>
 </footer>
+<script>
+    let popup = document.getElementById("popup");
+    function openPopup(){
+        popup.classList.add("openpopup");
+    }
+    function closePopup(){
+        popup.classList.remove("openpopup");
+    }
+</script>
 </body>
 </html>
