@@ -8,6 +8,11 @@
     --offcolor:rgb(252, 246, 193) ;
 }
 
+*{
+    margin: 0rem;
+    padding: 0rem;
+  }
+
 body{
     font-family: 'Rubik', sans-serif;
 }
@@ -74,7 +79,9 @@ h2,h3{
     padding: 1rem;
 }
 .containers{
+    }
     max-width: 800px;
+
     margin: auto;
     padding: 1rem;
 }
